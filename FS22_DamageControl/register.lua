@@ -13,7 +13,7 @@ for vehicleTypeName, vehicleType in pairs(g_vehicleTypeManager.types) do
     if vehicleType ~= nil and SpecializationUtil.hasSpecialization(Wearable, vehicleType.specializations) and not SpecializationUtil.hasSpecialization(Locomotive, vehicleType.specializations) then
         g_vehicleTypeManager:addSpecialization(vehicleTypeName, 'damageControl')
 		print ("  added damageControl to " .. vehicleTypeName)
-	else
-		print ("  skipped damageControl for " .. vehicleTypeName)
+	-- else
+		-- print ("  skipped damageControl for " .. vehicleTypeName)
     end
 end
