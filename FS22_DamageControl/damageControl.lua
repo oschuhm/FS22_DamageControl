@@ -1,5 +1,5 @@
 --
--- FuelLevel Warning for LS 22
+-- Damage Control for LS 22
 --
 -- # Author:  	LS-Farmers.de
 -- # date: 		13.10.2022
@@ -26,12 +26,14 @@ function damageControl:onLoadFinished(savegame)
 end
 
 function damageControl:updateDamageAmount(superFunc, dt)
-    --print("overwritten getDamageAmount function")
 
-	local damageValue = superFunc(self, dt) / 10
-    --print("damageValue -> " .. damageValue)
+	local damageValue = superFunc(self, dt)
+	local difficultyFactor = Utils.getNoNil(EconomyManager.getCostMultiplier(),1)
+	local reductionFactor = 0.5 * difficultyFactor
+	local reducedDamageValue = damageValue * reductionFactor
+    -- print("damageValue -> " .. damageValue .. " difficultyFactor -> " .. difficultyFactor .. " reductionFactor -> " .. reductionFactor .. " reducedDamageValue -> " .. reducedDamageValue)
 
-    return damageValue
+    return reducedDamageValue
 
 end
 
