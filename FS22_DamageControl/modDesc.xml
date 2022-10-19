@@ -4,26 +4,26 @@
   <version>1.0.0.0</version>
   <title>
     <en>Reduce Wearout</en>
-    <de>Reduzierung Verschleiß</de>
+    <de>Verschleiß-Reduzierung</de>
   </title>
   <description>
     <en>
-    <![CDATA[Reduces wearing of vehicles and tools.
+<![CDATA[Reduces wearing of vehicles and tools.
 So you can do more work with less wearing.
-Age and opearing time is still incorporated.
-Reduction depends on the economy difficulty level.
-  Easy   -> 20% wearout
-  Normal -> 35% wearout
-  Hard   -> 50% wearout
+Age and operating time is still incorporated.
+Reduction depends on the "economy" difficulty level.
+Easy -> 20% wearout
+Normal -> 35% wearout
+Hard -> 50% wearout
 ]]></en>
     <de>
-    <![CDATA[Verringert den Verschleiß an allen Fahrzeugen und Geräten.
-Ihr könnt somit länger damit arbeiten bevor sie in die Werkstatt müssen.
+<![CDATA[Verringert den Verschleiß an allen Fahrzeugen und Geräten.
+Ihr könnt somit länger damit arbeiten, bevor sie in die Werkstatt müssen.
 Alter und Betriebsstunden des Fahrzeuges werden weiterhin berücksichtigt.
-Ebenso wird der Schwierigkeitsgrad Wirtschaft berücksichtigt.
-  Einfach -> 20% Verschleiß
-  Normal  -> 35% Verschleiß
-  Schwer  -> 50% Verschleiß
+Ebenso wird der Schwierigkeitsgrad "Wirtschaft" berücksichtigt.
+Einfach -> 20% Verschleiß
+Normal -> 35% Verschleiß
+Schwer -> 50% Verschleiß
 ]]></de>
   </description>
   <multiplayer supported="true"/>
